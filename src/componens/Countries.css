@@ -46,9 +46,18 @@ body {
     border-radius: 4px;
     margin-bottom: 10px;
 }
-  
-  
-  
-  
-  
-  
+
+.loader, .error {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #333;
+}
+
+.loader {
+  color: #007bff;
+}
+
+.error {
+  color: red;
+}
