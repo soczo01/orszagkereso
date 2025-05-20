@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Countries.css";
+import Loading from "./LoadingSpinner/Loading";
 
 const Countries = () => {
   const [countries, setCountries] = useState([]);
@@ -35,7 +36,7 @@ const Countries = () => {
   );
 
   if (loading) {
-    return <div className="loader">Betöltés...</div>;
+    return <div className="loader"><Loading/></div>;
   }
 
   if (error) {
